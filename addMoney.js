@@ -4,6 +4,10 @@ document.getElementById("add-money-btn")
 
       const addMoney = inputFeildValueById("input-add-money");
       const pinNumber =inputFeildValueById("input-pin-number");
+
+      if(isNaN(addMoney)){
+            return("please try again")
+      }
       
       if(pinNumber === 1234){
             const inpuAddMoney = inputTextValueById("account-balence");

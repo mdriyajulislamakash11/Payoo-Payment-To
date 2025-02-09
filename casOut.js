@@ -6,6 +6,10 @@ document.getElementById("cash-out-btn")
       const cashOut = inputFeildValueById("input-cash-out");
       console.log(cashOut)
       const pinNumber = inputFeildValueById("input-pin-cash-out");
+
+      if(isNaN(cashOut)){
+            return("please try again")
+      }
       
       if(pinNumber === 1234){
             const accountBalence = inputTextValueById("account-balence");
@@ -14,7 +18,7 @@ document.getElementById("cash-out-btn")
                   const newBalence = accountBalence - cashOut; 
                   document.getElementById("account-balence").innerText = newBalence;
 
-                  
+
 
             }else{
                   alert("please currect amount enter")
